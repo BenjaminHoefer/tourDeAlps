@@ -1,0 +1,132 @@
+/*
+Font: Cinzel, poppins.
+border: #ccc.
+color logo: #999.
+color home: #fff.
+color: #333;
+/* überschruften conzel und rest poppins */
+
+/* Import fonts */
+@font-face {
+    font-family: "cinzel";
+    src: url(../fonts/cinzel/Cinzel-Medium.woff2) format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "poppins";
+    src: url(../fonts/poppins/Poppins-Regular.woff2) format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* General*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    width: 100%;
+}
+
+h1, h2, h3 , a{
+    font-family: "cinzel";
+}
+
+p, li {
+    font-family: "poppins";
+}
+
+/* Header */
+header h2 {
+    padding: 3vh 5vw;
+    color: #999;
+}
+
+header div {
+    background: url(../img/backgroundHome.avif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #ccc;
+    padding: 33vh 0;
+}
+
+header div h1 {
+    color: #fff;
+    font-size: 4rem;
+    text-align: center;
+}
+
+header div h1::first-letter {
+    font-size: 5rem;
+}
+
+/* Main */
+main section h3 {
+    text-align: center;
+    padding: 8vh 0;
+}
+
+main section p {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+main section img {
+    width: 30%;
+    margin-top: 10vh;
+}
+
+main section .left {
+    margin-left: 2.5%;
+}
+
+main section .middle {
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+
+main section ul {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+main section ul li {
+line-height: 2.5;
+list-style-type: none;
+}
+
+main section ul li .soldout {
+    color: #ff0000;
+}
+
+main section ul li .available {
+    color: #008000;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    text-align: center;
+    border-top: 2px solid #ccc;
+    margin-top: 10vh;
+}
+
+footer a {
+    display: inline-block;
+    width: 50%;
+    text-decoration: none;
+    color: #000;
+    font-size: 1.17em;
+    padding: 4vh 0;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
